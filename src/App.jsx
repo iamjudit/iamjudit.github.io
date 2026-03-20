@@ -1,22 +1,13 @@
-// App.jsx – Entry point que orquesta las secciones del portfolio de Judit
-
+// App.jsx
 import React from "react";
-import HeroSection from "./components/HeroSection";
-import AboutSection from "./components/AboutSection";
-import SkillsSection from "./components/SkillsSection";
-import ParticlesBackground from "./components/ParticlesBackground";
-import VideoBackground from "./components/VideoBackground";
+import Notebook from "./components/Notebook";
+import "./index.css";
 
 function App() {
   return (
-    <div className="relative w-screen overflow-x-hidden text-white bg-navy scroll-smooth">
-      <VideoBackground />
-      <ParticlesBackground />
-
-      <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-    </div>
+    <main className="bg-[#0a1f44] text-white min-h-screen font-sans">
+      <Notebook />
+    </main>
   );
 }
 
